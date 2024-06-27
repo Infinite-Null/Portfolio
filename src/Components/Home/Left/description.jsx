@@ -5,6 +5,7 @@ import {Social} from "../../../Utilities/Links.js";
 import { motion } from "framer-motion"
 import Context from "../../../Context/Context.jsx";
 import {useContext} from "react";
+import myImage from "../../../assets/images/me.jpeg";
 
 function Description() {
     const {mouseEnter, mouseLeave} = useContext(Context)
@@ -28,6 +29,20 @@ function Description() {
     const description = "Hello, I am Ankit Kumar Shah. I am a full stack developer with extensive experience in both front-end and back-end."
     return (
         <div className={"gap-6 h-full max-w-2xl flex justify-center items-start p-5 flex-col"}>
+            <motion.img
+                initial={{
+                    y: 50,
+                    opacity: 0,
+                }}
+                animate={{
+                    y: 0,
+                    opacity: 1,
+                    transition: {
+                        duration: 0.5,
+                        ease: [0.76, 0, 0.24, 1]
+                    }
+                }}
+                src={myImage} alt="Ankit Kumar Shah" className="rounded-3xl w-full h-full object-cover lg:hidden block"/>
             <div onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>
                 <motion.div
                     initial={{
@@ -81,8 +96,9 @@ function Description() {
                     className={"md:text-7xl md:leading-[85px] leading-[50px] text-5xl max-w-2xl font-medium"}>Developer.
                 </motion.div>
             </div>
-            <div onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} className={"md:text-xl text-lg max-w-2xl font-medium"}>
-                {description.split(" ").map((e, i)=>{
+            <div onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}
+                 className={"md:text-xl text-lg max-w-2xl font-medium"}>
+                {description.split(" ").map((e, i) => {
                     return <motion.span
                         initial={{
                             opacity: 0,
@@ -94,7 +110,7 @@ function Description() {
                             transition: {
                                 duration: 0.5,
                                 ease: [0.76, 0, 0.24, 1],
-                                delay: 0.7+ i*0.05
+                                delay: 0.7 + i * 0.05
                             }
                         }}
                         className={"inline-block px-0.5"}>{e} </motion.span>

@@ -13,7 +13,7 @@ export function App() {
               <div className="h-[100vh] bg-[#f9f9f9] lg:col-span-3 flex items-center justify-center">
                   <Description/>
               </div>
-              <div className="h-[100vh] bg-[#3e3e3e] lg:col-span-2 overflow-visible relative flex items-center">
+              <div className="h-[100vh] bg-[#3e3e3e] lg:col-span-2 overflow-visible relative lg:flex hidden items-center">
                   <Image/>
               </div>
           </div>

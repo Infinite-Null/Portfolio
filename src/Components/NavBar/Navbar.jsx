@@ -9,14 +9,12 @@ function Navbar() {
                 background: 'rgba(255,255,255,0)',
                 zIndex: 100,
             }}>
-                <div className="text-white">
-                    <a href={Social.Github} onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} className="text-xl text-black font-thin"
+                    <a href={Social.Github} target={"_blank"} onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} className="text-xl text-black font-thin bg-white bg-opacity-60 lg:bg-opacity-0 p-2 rounded-lg"
                     style={{
                         fontFamily: "Playwrite MX",
                         fontWeight: 300,
                     }}
                     >@infinite-null</a>
-                </div>
                 <div>
                     <button onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} className="text-black text-4xl bg-white h-16 w-16 rounded-full">
                         =

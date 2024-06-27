@@ -10,6 +10,7 @@ function Mouse() {
     }
     useEffect(()=>{
         window.addEventListener("mousemove", (e)=>{
+            console.log(e)
             mousePosition.x.set(e.clientX - 12.5)
             mousePosition.y.set(e.clientY - 12.5)
         })
@@ -22,7 +23,7 @@ function Mouse() {
         <motion.div
             className={"h-[25px] w-[25px] bg-blend-lighten rounded-full"}
             style={{
-                position: "absolute",
+                position: "fixed",
                 top: mousePosition.y,
                 left:mousePosition.x,
                 pointerEvents: "none",

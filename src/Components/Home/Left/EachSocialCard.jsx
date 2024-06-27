@@ -1,5 +1,5 @@
 import {motion} from "framer-motion";
-import Context from "../../Context/Context.jsx";
+import Context from "../../../Context/Context.jsx";
 import {useContext} from "react";
 
 function EachSocialCard({icon, link, index}) {

@@ -1,4 +1,4 @@
-import Context from "./Context";
+import Context from "./Context.jsx";
 import {useState} from "react";
 import {useCallback} from "react";
 

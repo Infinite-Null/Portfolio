@@ -1,7 +1,7 @@
 import {useEffect} from "react";
 import {motion, useSpring} from "framer-motion";
 import {useContext} from "react";
-import Context from "../Context/Context.jsx";
+import Context from "../../Context/Context.jsx";
 function Mouse() {
     const {Hovered} = useContext(Context)
     const mousePosition = {

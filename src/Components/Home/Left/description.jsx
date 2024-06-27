@@ -3,7 +3,7 @@ import {FaInstagram, FaLinkedinIn} from "react-icons/fa";
 import {FiGithub} from "react-icons/fi";
 import {Social} from "../../../Utilities/Links.js";
 import { motion } from "framer-motion"
-import Context from "../../Context/Context.jsx";
+import Context from "../../../Context/Context.jsx";
 import {useContext} from "react";
 
 function Description() {

@@ -10,8 +10,9 @@
     /*      url('./fonts/mycustomfont.eot'), */
     /*      url('./fonts/mycustomfont.svg') format('svg'); */
 }
+
 :root {
-    font-family: Helvetica, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-family: Helvetica, system-ui, Avenir, Helvetica, Arial, sans-serif, Play;
     line-height: 1.5;
     font-weight: 400;
     max-width: 100vw;

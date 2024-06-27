@@ -47,7 +47,7 @@ function Description() {
                 <motion.div
                     initial={{
                         opacity: 0,
-                        y: 30,
+                        y: 20,
                     }}
                     animate={{
                         opacity: 1,
@@ -64,7 +64,7 @@ function Description() {
                 <motion.div
                     initial={{
                         opacity: 0,
-                        y: 30
+                        y: 20
                     }}
                     animate={{
                         opacity: 1,
@@ -82,7 +82,7 @@ function Description() {
                 <motion.div
                     initial={{
                         opacity: 0,
-                        y: 30
+                        y: 20
                     }}
                     animate={{
                         opacity: 1,
@@ -102,7 +102,7 @@ function Description() {
                     return <motion.span
                         initial={{
                             opacity: 0,
-                            y: 30
+                            y: 10
                         }}
                         animate={{
                             opacity: 1,
@@ -110,7 +110,7 @@ function Description() {
                             transition: {
                                 duration: 0.5,
                                 ease: [0.76, 0, 0.24, 1],
-                                delay: 0.7 + i * 0.05
+                                delay: 0.5 + i * 0.02
                             }
                         }}
                         className={"inline-block px-0.5"}>{e} </motion.span>

@@ -95,7 +95,7 @@ function EachSkillCard({name, description, icon}) {
                 <motion.h1
                     initial={{
                         opacity: 0,
-                        y: 30
+                        y: 20
                     }}
                     whileInView={{
                         opacity: 1,
@@ -109,7 +109,7 @@ function EachSkillCard({name, description, icon}) {
                 <motion.p
                     initial={{
                         opacity: 0,
-                        y: 30
+                        y: 20
                     }}
                     whileInView={{
                         opacity: 1,
@@ -117,7 +117,7 @@ function EachSkillCard({name, description, icon}) {
                         transition: {
                             duration: 0.5,
                             ease: [0.76, 0, 0.24, 1],
-                            delay: 0.2
+                            delay: 0.05
                         }
                     }}
                     className={"text-xs"}>{description}</motion.p>

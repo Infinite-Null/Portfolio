@@ -7,6 +7,11 @@ function LeftAbout() {
     const description = "I am an enthusiastic individual deeply passionate about technology and coding."
     const description2 = "I am a full stack developer who leverage modern frameworks and libraries to build robust and responsive software solutions."
     const description3 = "I am also into mobile application development with React Native and Flutter, broadening my skill set and versatility."
+    const animationValues={
+        duration: 0.4,
+        y: 10,
+        delay: 0.008
+    }
     return (
         <div className={"gap-12 h-full max-w-2xl flex justify-center items-start p-5 flex-col text-white"}>
             <div onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>
@@ -23,15 +28,15 @@ function LeftAbout() {
                     return <motion.span
                         initial={{
                             opacity: 0,
-                            y: 30
+                            y: animationValues.y
                         }}
                         whileInView={{
                             opacity: 1,
                             y: 0,
                             transition: {
-                                duration: 0.5,
+                                duration: animationValues.duration,
                                 ease: [0.76, 0, 0.24, 1],
-                                delay: i * 0.015
+                                delay: i * animationValues.delay
                             }
                         }}
                         className={"inline-block px-0.5"}>{e} </motion.span>
@@ -43,15 +48,15 @@ function LeftAbout() {
                     return <motion.span
                         initial={{
                             opacity: 0,
-                            y: 30
+                            y: animationValues.y
                         }}
                         whileInView={{
                             opacity: 1,
                             y: 0,
                             transition: {
-                                duration: 0.5,
+                                duration: animationValues.duration,
                                 ease: [0.76, 0, 0.24, 1],
-                                delay: i * 0.015
+                                delay: i * animationValues.delay
                             }
                         }}
                         className={"inline-block px-0.5"}>{e} </motion.span>
@@ -63,15 +68,15 @@ function LeftAbout() {
                     return <motion.span
                         initial={{
                             opacity: 0,
-                            y: 30
+                            y: animationValues.y
                         }}
                         whileInView={{
                             opacity: 1,
                             y: 0,
                             transition: {
-                                duration: 0.5,
+                                duration: animationValues.duration,
                                 ease: [0.76, 0, 0.24, 1],
-                                delay: i * 0.015
+                                delay: i * animationValues.delay
                             }
                         }}
                         className={"inline-block px-0.5"}>{e} </motion.span>

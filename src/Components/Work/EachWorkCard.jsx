@@ -71,6 +71,7 @@ function EachWorkCard({name, description, skills, github, live, image, index}) {
                     >
                         Github <FiGithub size={20}/>
                     </a>
+                    <div className="w-px h-1 bg-gray-900/10 sm:hidden"></div>
                     <a
                         onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}
                         href={live}

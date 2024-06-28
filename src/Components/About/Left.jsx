@@ -1,6 +1,7 @@
 import {motion} from "framer-motion";
 import Context from "../../Context/Context.jsx";
 import {useContext} from "react";
+import myImage from "../../assets/resume/resume.pdf";
 
 function LeftAbout() {
     const {mouseEnter, mouseLeave} = useContext(Context)
@@ -83,8 +84,7 @@ function LeftAbout() {
                 })}
                 <br/>
                 <br/>
-                {/*TODO: Add a download resume link*/}
-                <a href={"#"} className={"text-sm mt-16 rounded-full p-4 bg-[#545353] hover:bg-[#474040] duration-500 transition-colors"}>Download Resume</a>
+                <a href={myImage} target={"_blank"} type={"file"} className={"text-sm mt-16 rounded-full p-4 bg-[#545353] hover:bg-[#474040] duration-500 transition-colors"}>Download Resume</a>
             </div>
         </div>
     );

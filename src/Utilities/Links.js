@@ -10,16 +10,16 @@ export const socials = [
     {
         name: "LinkedIn",
         link: Social.Linkedin,
-        icon: <FaLinkedinIn size={20} color={"black"}/>
+        icon:FaLinkedinIn({size:20,color:"black"})
     },
     {
         name: "GitHub",
         link: Social.Github,
-        icon: <FiGithub size={20} color={"black"}/>
+        icon: FiGithub({size:20,color:"black"})
     },
     {
         name: "Instagram",
         link: Social.Instagram,
-        icon: <FaInstagram size={20} color={"black"}/>
+        icon: FaInstagram({size:20,color:"black"})
     }
 ]

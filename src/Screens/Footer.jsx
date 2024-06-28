@@ -2,6 +2,8 @@ import Context from "../Context/Context.jsx";
 import {useContext} from "react";
 import {Social, socials} from "../Utilities/Links.js";
 import EachSocialCard from "../Components/Hero/Left/EachSocialCard.jsx";
+import * as emailjs from "emailjs-com";
+import {Bounce, toast} from "react-toastify";
 
 function Footer() {
     const {mouseEnter, mouseLeave} = useContext(Context)
@@ -31,12 +33,44 @@ function Footer() {
                                 lets talk!
                             </div>
 
-                        <form className="mt-6 w-full">
-                            {/*TODO: Integrate Email Api*/}
+                        <form className="mt-6 w-full" onSubmit={(e)=>{
+                            e.preventDefault();
+                            emailjs
+                                .sendForm("service_5j0jkhz", "template_fyuwx6p", e.target, "bl-rC7AeYohj3g0hx")
+                                .then(
+                                    (result) => {
+                                        toast.success('Received Your Hello!', {
+                                            position: "top-right",
+                                            autoClose: 2000,
+                                            hideProgressBar: true,
+                                            closeOnClick: true,
+                                            pauseOnHover: true,
+                                            draggable: true,
+                                            progress: undefined,
+                                            theme: "light",
+                                            transition: Bounce,
+                                        });
+                                    },
+                                    (error) => {
+                                        toast.success('Something Went Wrong!', {
+                                            position: "top-right",
+                                            autoClose: 2000,
+                                            hideProgressBar: true,
+                                            closeOnClick: true,
+                                            pauseOnHover: true,
+                                            draggable: true,
+                                            progress: undefined,
+                                            theme: "light",
+                                            transition: Bounce,
+                                        });
+                                    }
+                                );
+                        }}>
                             <input
                                 onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}
                                 required={true}
-                                id="UserEmail"
+                                id="name"
+                                name={"name"}
                                 placeholder="Your Name"
                                 className="w-full border-2 border-white rounded-full text-md p-5 bg-transparent"
                             />
@@ -44,14 +78,16 @@ function Footer() {
                                 onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}
                                 type="email"
                                 required={true}
-                                id="UserEmail"
+                                id="email"
+                                name={"email"}
                                 placeholder="Your Email"
                                 className="w-full mt-4 border-2 border-white rounded-full text-md p-5 bg-transparent"
                             />
                             <input
                                 onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}
                                 required={true}
-                                id="UserEmail"
+                                id="message"
+                                name={"message"}
                                 placeholder="Your message"
                                 className="w-full mt-4 border-2 border-white rounded-full text-md p-5 bg-transparent"
                             />
@@ -83,21 +119,16 @@ function Footer() {
                     </div>
 
                     <div className="mt-8 border-t border-gray-100 pt-8">
-                        <ul className="flex flex-wrap gap-4 text-xs">
+                        <ul className="flex flex-wrap gap-4 text-md">
                             <li>
-                                <div className="text-gray-500 transition hover:opacity-75"> Hard Work </div>
+                                <a href={"mailto:ankit.kum.sha9933@gmail.com"} className="text-gray-200 transition hover:opacity-75"> ankit.kum.sha9933@gmail.com </a>
                             </li>
 
                             <li>
-                                <div className="text-gray-500 transition hover:opacity-75"> Consistency </div>
-                            </li>
-
-                            <li>
-                                <div className="text-gray-500 transition hover:opacity-75"> Dedication </div>
+                                <div className="text-gray-200 transition hover:opacity-75"> +91 7478856289 </div>
                             </li>
                         </ul>
 
-                        <p className="mt-8 text-xs text-gray-500">&copy; Is my way of work</p>
                     </div>
                 </div>
             </div>

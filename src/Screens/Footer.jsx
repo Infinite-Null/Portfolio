@@ -32,6 +32,7 @@ function Footer() {
                             </div>
 
                         <form className="mt-6 w-full">
+                            {/*TODO: Integrate Email Api*/}
                             <input
                                 onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}
                                 required={true}

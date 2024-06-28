@@ -108,7 +108,7 @@ function Work() {
                     href={Social.Github}
                     target={"_blank"}
                     onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}
-                    className={"rounded-full bg-gray-200 lg:mt-16 mt-0 w-48 h-16 text-center flex items-center justify-center font-semibold lg:rotate-90 rotate-0 hover:bg-gray-300 border-2 border-transparent hover:border-white transition-colors duration-500"}>
+                    className={"rounded-full mb-4 bg-gray-200 w-48 h-16 text-center flex items-center justify-center font-semibold hover:bg-gray-300 border-2 border-transparent hover:border-white transition-colors duration-500"}>
                     All Work
                 </a>
             </div>
@@ -119,7 +119,8 @@ function Work() {
 function EachPaginationButton({page, isActive, setIsActive}) {
     const {mouseEnter, mouseLeave} = useContext(Context)
     return (
-        <button
+        <a
+            href={"#work"}
             onClick={() => setIsActive(page)}
             onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}
             style={{
@@ -128,7 +129,7 @@ function EachPaginationButton({page, isActive, setIsActive}) {
             }}
             className={"rounded-full bg-gray-200 mb-4 w-16 h-16 text-center flex items-center justify-center font-semibold hover:bg-[#f5e6d5] border-2 border-transparent hover:border-white transition-colors duration-500"}>
             {page}
-        </button>
+        </a>
     );
 }
 

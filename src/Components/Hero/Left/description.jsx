@@ -1,5 +1,5 @@
 import EachSocialCard from "./EachSocialCard.jsx";
-import {socials} from "../../../Utilities/Links.js";
+import {Social, socials} from "../../../Utilities/Links.js";
 import { motion } from "framer-motion"
 import Context from "../../../Context/Context.jsx";
 import {useContext} from "react";
@@ -10,6 +10,14 @@ function Description() {
     const description = "Hello, I am Ankit Kumar Shah. I am a full stack developer with extensive experience in both front-end and back-end."
     return (
         <div className={"gap-6 h-full max-w-2xl flex justify-center items-start p-5 flex-col"}>
+            <a href={Social.Github} target={"_blank"} onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}
+               className="text-xl lg:absolute  top-10 left-10 text-black font-thin p-2 rounded-lg"
+               style={{
+                   fontFamily: "Playwrite MX",
+                   fontWeight: 300,
+                   zIndex: 989
+               }}
+            >@infinite-null</a>
             <motion.img
                 initial={{
                     y: 50,
@@ -23,7 +31,8 @@ function Description() {
                         ease: [0.76, 0, 0.24, 1]
                     }
                 }}
-                src={myImage} alt="Ankit Kumar Shah" className="rounded-3xl w-full h-full object-cover lg:hidden block"/>
+                src={myImage} alt="Ankit Kumar Shah"
+                className="rounded-3xl w-full h-full object-cover lg:hidden block"/>
             <div onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>
                 <motion.div
                     initial={{

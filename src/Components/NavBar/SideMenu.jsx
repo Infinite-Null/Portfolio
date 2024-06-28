@@ -88,7 +88,7 @@ function SideMenu({seTisOpen}) {
                     )}
                 </div>
 
-                <div className={'absolute bottom-10'}>
+                <div className={'absolute bottom-[90px]'}>
                     <div className={"flex gap-6 items-start px-16 font-normal"}>
                         <a href={Social.Linkedin} onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} target={"_blank"} className={"text-[100%]"}>LinkedIn</a>
                         <a href={Social.Github} onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} target={"_blank"} className={"text-[100%]"}>GitHub</a>

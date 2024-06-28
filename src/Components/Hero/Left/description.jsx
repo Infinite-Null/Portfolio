@@ -1,7 +1,5 @@
 import EachSocialCard from "./EachSocialCard.jsx";
-import {FaInstagram, FaLinkedinIn} from "react-icons/fa";
-import {FiGithub} from "react-icons/fi";
-import {Social} from "../../../Utilities/Links.js";
+import {socials} from "../../../Utilities/Links.js";
 import { motion } from "framer-motion"
 import Context from "../../../Context/Context.jsx";
 import {useContext} from "react";
@@ -9,23 +7,6 @@ import myImage from "../../../assets/images/me.jpeg";
 
 function Description() {
     const {mouseEnter, mouseLeave} = useContext(Context)
-    const socials = [
-        {
-            name: "LinkedIn",
-            link: Social.Linkedin,
-            icon: <FaLinkedinIn size={20}/>
-        },
-        {
-            name: "GitHub",
-            link: Social.Github,
-            icon: <FiGithub size={20}/>
-        },
-        {
-            name: "Instagram",
-            link: Social.Instagram,
-            icon: <FaInstagram size={20}/>
-        }
-    ]
     const description = "Hello, I am Ankit Kumar Shah. I am a full stack developer with extensive experience in both front-end and back-end."
     return (
         <div className={"gap-6 h-full max-w-2xl flex justify-center items-start p-5 flex-col"}>

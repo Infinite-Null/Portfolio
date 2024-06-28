@@ -4,6 +4,7 @@ import Navbar from "./Components/NavBar/Navbar.jsx";
 import Hero from "./Screens/Hero.jsx";
 import About from "./Screens/About.jsx";
 import Work from "./Screens/Work.jsx";
+import Footer from "./Screens/Footer.jsx";
 
 export function App() {
   return (
@@ -13,6 +14,7 @@ export function App() {
         <Hero/>
         <About/>
         <Work/>
+        <Footer/>
       </ContextState>
   )
 }

@@ -19,4 +19,8 @@
     overflow-x: hidden;
     cursor: none;
     background-color: #f9f9f9;
+    scroll-behavior: smooth;
+}
+*, html, body{
+    scroll-behavior: smooth;
 }

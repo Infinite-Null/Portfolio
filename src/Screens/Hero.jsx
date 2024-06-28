@@ -3,7 +3,7 @@ import Image from "../Components/Hero/Right/Image.jsx";
 
 function Hero() {
     return (
-        <div className="grid grid-cols-1 lg:grid-cols-5">
+        <div id={"home"} className="grid grid-cols-1 lg:grid-cols-5">
             <div className="h-[100vh] bg-[#f9f9f9] lg:col-span-3 flex items-center justify-center">
                 <Description/>
             </div>

@@ -6,7 +6,7 @@ import EachSocialCard from "../Components/Hero/Left/EachSocialCard.jsx";
 function Footer() {
     const {mouseEnter, mouseLeave} = useContext(Context)
     return (
-    <footer className="bg-[#3e3e3e] text-white">
+    <footer id={"contact"} className="bg-[#3e3e3e] text-white">
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
             <div className="lg:grid lg:grid-cols-2">
                 <div

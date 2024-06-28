@@ -3,7 +3,7 @@ import RightSkills from "../Components/About/Right.jsx";
 
 function About() {
     return (
-        <div className="grid grid-cols-1 lg:grid-cols-5">
+        <div id={"about"} className="grid grid-cols-1 lg:grid-cols-5">
             <div className="bg-[#3e3e3e] lg:col-span-3 flex items-center justify-center py-36">
                 <LeftAbout />
             </div>

@@ -54,7 +54,7 @@ function Work() {
         },
     ]
     return (
-        <div className="grid grid-cols-1 gap-4 lg:grid-cols-[120px_1fr] lg:gap-8 py-12 lg:px-36 px-5">
+        <div id={"work"} className="grid grid-cols-1 gap-4 lg:grid-cols-[120px_1fr] lg:gap-8 py-12 lg:px-36 px-5">
             <div
                 className="rounded-lg lg:flex hidden flex-col items-center justify-start pt-20 gap-0">
                 <EachPaginationButton page={1} isActive={Active === 1} setIsActive={setActive}/>

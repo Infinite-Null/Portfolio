@@ -9,19 +9,19 @@ function SideMenu({seTisOpen}) {
     const links = [
         {
             name: "Home",
-            link: "#"
+            link: "#home"
         },
         {
             name: "About",
-            link: "#"
+            link: "#about"
         },
         {
             name: "Work",
-            link: "#"
+            link: "#work"
         },
         {
             name: "Contact",
-            link: "#"
+            link: "#contact"
         }
     ]
     return (
@@ -90,9 +90,9 @@ function SideMenu({seTisOpen}) {
 
                 <div className={'absolute bottom-10'}>
                     <div className={"flex gap-6 items-start px-16 font-normal"}>
-                        <a href={Social.Linkedin} target={"_blank"} className={"text-[100%]"}>LinkedIn</a>
-                        <a href={Social.Github} target={"_blank"} className={"text-[100%]"}>GitHub</a>
-                        <a href={Social.Instagram} target={"_blank"} className={"text-[100%]"}>Instagram</a>
+                        <a href={Social.Linkedin} onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} target={"_blank"} className={"text-[100%]"}>LinkedIn</a>
+                        <a href={Social.Github} onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} target={"_blank"} className={"text-[100%]"}>GitHub</a>
+                        <a href={Social.Instagram} onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} target={"_blank"} className={"text-[100%]"}>Instagram</a>
                     </div>
                 </div>
             </motion.div>

@@ -11,7 +11,7 @@ function Description() {
     return (
         <div className={"gap-6 h-full max-w-2xl flex justify-center items-start p-5 flex-col"}>
             <a href={Social.Github} target={"_blank"} onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}
-               className="text-xl lg:absolute top-14 left-10 text-black font-thin p-2 rounded-lg"
+               className="text-xl lg:absolute top-10 left-10 text-black font-thin p-2 rounded-lg"
                style={{
                    fontFamily: "Playwrite MX",
                    fontWeight: 300,

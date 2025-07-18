@@ -84,7 +84,7 @@ function LeftAbout() {
                 })}
                 <br/>
                 <br/>
-                <a href={myImage} target={"_blank"} type={"file"} className={"text-sm mt-16 rounded-full p-4 bg-[#545353] hover:bg-[#474040] duration-500 transition-colors"}>Download Resume</a>
+                <a href={"https://github.com/Infinite-Null/resume/blob/main/Ankit_Kumar_Shah.pdf"} target={"_blank"} className={"text-sm mt-16 rounded-full p-4 bg-[#545353] hover:bg-[#474040] duration-500 transition-colors"}>Download Resume</a>
             </div>
         </div>
     );
